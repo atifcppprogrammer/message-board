@@ -1,0 +1,91 @@
+/* styling for *.hbs */
+@keyframes emphasis-message{
+  from { 
+    border-color:#800080;
+    transform:scale(1);
+  }
+  to { 
+    border-color:#ebebeb;
+    transform:scale(1.02);
+  }
+}
+
+@keyframes emphasis-button{
+  from{
+    background-color:#800080;
+    transform:scale(1);
+    color:#ebebeb;
+  }
+  to{
+    background-color:#ebebeb;
+    transform:scale(1.02);
+    color:#800080;
+  }
+}
+
+.app-button:hover{
+  animation:emphasis-button 0.2s linear forwards;
+}
+
+.app-button{
+  background-color:#800080;
+  border-radius:10px;
+  font-size:10px;
+  padding:10px;
+  width:100px;
+  color:#ebebeb;
+  border:none;
+}
+
+div[class$="container"] > h1 {
+  text-shadow:10px 10px  10px #000;
+  font-size:40px;
+}
+
+body {
+  background-color:#101010;
+  font-family:Ubuntu;
+  font-size:15px;
+  color:#ebebeb;
+}
+
+a {
+  color: #8080080;
+}
+
+div.common-container:hover{
+  animation:emphasis-message 0.2s linear forwards;
+}
+
+div.common-container{
+  box-shadow: 10px 10px 10px #000;
+  background-color:#141414;
+  border:2px solid #800080;
+  border-radius:20px;
+  padding:20px;
+  width:550px;
+  margin:30px;
+}
+
+/* styling for new.hbs */
+div.new-container > div > form > input {
+  background-color: rgba(255,255,255,0.01);
+  border-radius:20px;
+  color:#ebebeb;
+  padding:20px;
+  border:none;
+  width:80%;
+}
+
+div.new-container > div {
+  box-shadow: 10px 10px 10px #000;
+  background-color:#141414;
+  border:2px solid #800080;
+  border-radius:20px;
+  padding:20px;
+  width:500px;
+  margin:30px;
+}
+
+
+

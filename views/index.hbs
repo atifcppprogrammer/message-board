@@ -1,0 +1,18 @@
+<div class = "index-container" align = "center">
+  <h1>View Messages</h1>
+  <div align = "center">
+    {{#each messages}}
+      <div class = "common-container">
+	<h2 align = "left">{{this.user}}</h2>
+	<h3 align = "left">{{this.date}}</h3>
+	<p align = "justify">{{this.text}}</p>
+      </div>
+    {{/each}}
+  </div>
+  <div align = "center">
+    <button class = "app-button"> 
+      <strong> New Message </strong> 
+    </button>
+  </div>
+</div>
+<script src = "/javascripts/index.js"></script>
