@@ -12,7 +12,7 @@ const saveMessageToFile = message => {
 
 router.post('/', async (req, res, next) => {
   const messageBody = Object.assign({}, req.body);
-  messageBody.date = (new Date).toLocaleTimeString('en-US', dateOptions);
+  messageBody.date = (new Date).toLocaleTimeString('en-PK', dateOptions);
   await saveMessageToFile(messageBody);
   res.redirect('/');
 });
